@@ -1,0 +1,16 @@
+PODS:
+  - AJAppEvent (0.1.0)
+
+DEPENDENCIES:
+  - AJAppEvent (from `../`)
+
+EXTERNAL SOURCES:
+  AJAppEvent:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AJAppEvent: bf0d2e15ee3e2652bbb9c49f19d4c39d32fea8fe
+
+PODFILE CHECKSUM: d7e5514bf30279c63181a66cd3f54c0cf2704cc3
+
+COCOAPODS: 1.7.5

@@ -1,0 +1,6 @@
+framework module AJAppEvent {
+  umbrella header "AJAppEvent-umbrella.h"
+
+  export *
+  module * { export * }
+}
