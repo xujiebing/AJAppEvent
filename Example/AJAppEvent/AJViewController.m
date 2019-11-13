@@ -7,6 +7,7 @@
 //
 
 #import "AJViewController.h"
+#import <AJAppEvent/AJAppEvent.h>
 
 @interface AJViewController ()
 
@@ -18,6 +19,10 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    [AJAppEvent didFinishLaunching:^(AJAppEventModel * _Nonnull eventModel) {
+        NSLog(@"");
+    }];
+
 }
 
 - (void)didReceiveMemoryWarning

@@ -18,5 +18,6 @@
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "AJAppEvent/Classes/**/*"
+  "source_files": "AJAppEvent/Classes/*",
+  "prefix_header_file": "AJAppEvent/Classes/AJAppEvent.pch"
 }

@@ -10,6 +10,8 @@
 #endif
 #endif
 
+#import "AJAppEvent.h"
+#import "AJAppEventModel.h"
 
 FOUNDATION_EXPORT double AJAppEventVersionNumber;
 FOUNDATION_EXPORT const unsigned char AJAppEventVersionString[];
