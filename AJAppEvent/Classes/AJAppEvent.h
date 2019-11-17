@@ -6,7 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
-@class AJAppEventModel;
+#import <AJAppEvent/AJAppEventModel.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

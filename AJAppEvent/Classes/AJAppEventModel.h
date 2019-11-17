@@ -11,10 +11,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface AJAppEventModel : NSObject
 
+/// 时间名称
 @property (nonatomic, copy, readwrite) NSString *name;
 
+/// application对象
 @property (nonatomic, strong, readwrite) UIApplication *application;
 
+/// 参数
 @property (nonatomic, strong, readwrite) NSDictionary *launchOptions;
 
 @end

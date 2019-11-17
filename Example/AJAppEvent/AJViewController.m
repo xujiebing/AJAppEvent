@@ -20,9 +20,25 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     [AJAppEvent didFinishLaunching:^(AJAppEventModel * _Nonnull eventModel) {
-        NSLog(@"");
+        NSLog(@"%@", eventModel.name);
+    }];
+    [AJAppEvent didBecomeActive:^(AJAppEventModel * _Nonnull eventModel) {
+        NSLog(@"%@", eventModel.name);
+    }];
+    [AJAppEvent didEnterBackground:^(AJAppEventModel * _Nonnull eventModel) {
+        NSLog(@"%@", eventModel.name);
     }];
 
+    [NSNotificationCenter.defaultCenter addObserver:self selector:@selector(p_didFinishLaunching:) name:UIApplicationDidFinishLaunchingNotification object:nil];
+    
+}
+
+- (void)p_didFinishLaunching:(NSNotification *)obj {
+    // TODO:处理业务代码
+}
+
+- (void)dealloc {
+    [NSNotificationCenter.defaultCenter removeObserver:self];
 }
 
 - (void)didReceiveMemoryWarning
