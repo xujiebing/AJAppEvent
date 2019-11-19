@@ -18,9 +18,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    self.view.backgroundColor = UIColor.lightGrayColor;
+    AJWeakSelf
     [AJAppEvent didFinishLaunching:^(AJAppEventModel * _Nonnull eventModel) {
         NSLog(@"%@", eventModel.name);
+        NSLog(@"使用ajSelf，防止内存泄漏=====%@", ajSelf.class);
     }];
     [AJAppEvent didBecomeActive:^(AJAppEventModel * _Nonnull eventModel) {
         NSLog(@"%@", eventModel.name);
@@ -28,17 +30,12 @@
     [AJAppEvent didEnterBackground:^(AJAppEventModel * _Nonnull eventModel) {
         NSLog(@"%@", eventModel.name);
     }];
-
-    [NSNotificationCenter.defaultCenter addObserver:self selector:@selector(p_didFinishLaunching:) name:UIApplicationDidFinishLaunchingNotification object:nil];
+    
     
 }
 
-- (void)p_didFinishLaunching:(NSNotification *)obj {
-    // TODO:处理业务代码
-}
-
 - (void)dealloc {
-    [NSNotificationCenter.defaultCenter removeObserver:self];
+    NSLog(@"没有内存泄漏哦");
 }
 
 - (void)didReceiveMemoryWarning

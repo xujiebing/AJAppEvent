@@ -8,6 +8,8 @@
 #import <Foundation/Foundation.h>
 #import <AJAppEvent/AJAppEventModel.h>
 
+#define AJWeakSelf __weak __typeof(self)ajSelf = self;
+
 NS_ASSUME_NONNULL_BEGIN
 
 typedef void(^AJAppEventBlock)(AJAppEventModel *eventModel);
