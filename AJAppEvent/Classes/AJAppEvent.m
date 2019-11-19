@@ -110,6 +110,11 @@ static AJAppEvent *shared = nil;
                selector:@selector(p_notificationEvent:)
                    name:UIApplicationProtectedDataDidBecomeAvailable
                  object:nil];
+    // 截屏通知
+    [center addObserver:self
+               selector:@selector(p_notificationEvent:)
+                   name:UIApplicationUserDidTakeScreenshotNotification
+                 object:nil];
 }
 
 - (void)p_notificationEvent:(NSNotification *)obj {
@@ -195,6 +200,11 @@ static AJAppEvent *shared = nil;
 + (void)protectedDataDidBecomeAvailable:(AJAppEventBlock)block {
     [AJAppEvent.shared p_setObserviceEventBlock:block name:UIApplicationProtectedDataDidBecomeAvailable];
 }
+
++ (void)userDidTakeScreenshot:(AJAppEventBlock)block {
+    [AJAppEvent.shared p_setObserviceEventBlock:block name:UIApplicationUserDidTakeScreenshotNotification];
+}
+
 
 #pragma mark - 懒加载方法
 - (NSMutableDictionary *)eventDic {

@@ -44,6 +44,7 @@ typedef void(^AJAppEventBlock)(AJAppEventModel *eventModel);
 
 + (void)protectedDataDidBecomeAvailable:(AJAppEventBlock)block;
 
++ (void)userDidTakeScreenshot:(AJAppEventBlock)block;
 
 @end
 
