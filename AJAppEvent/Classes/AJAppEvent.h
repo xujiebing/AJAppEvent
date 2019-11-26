@@ -16,6 +16,12 @@ typedef void(^AJAppEventBlock)(AJAppEventModel *eventModel);
 
 @interface AJAppEvent : NSObject
 
++ (void)addObserverName:(NSString * _Nonnull)name block:(AJAppEventBlock)block;
+
++ (void)postNotificationName:(NSString * _Nonnull)name
+                      object:(id _Nullable)object
+                    userInfo:(NSDictionary * _Nullable)userInfo;
+
 + (void)didEnterBackground:(AJAppEventBlock)block;
 
 + (void)willEnterForeground:(AJAppEventBlock)block;

@@ -30,8 +30,11 @@
     [AJAppEvent didEnterBackground:^(AJAppEventModel * _Nonnull eventModel) {
         NSLog(@"%@", eventModel.name);
     }];
-    
-    
+    NSString *name = @"wwwwwwww";
+    [AJAppEvent addObserverName:name block:^(AJAppEventModel * _Nonnull eventModel) {
+        NSLog(@"%@", eventModel.name);
+    }];
+    [NSNotificationCenter.defaultCenter postNotificationName:name object:@"111" userInfo:@{@"22":@"22"}];
 }
 
 - (void)dealloc {

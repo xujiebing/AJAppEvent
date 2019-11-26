@@ -122,7 +122,12 @@ static AJAppEvent *shared = nil;
         return ;
     }
     AJAppEventModel *model = [[AJAppEventModel alloc] init];
-    model.application = obj.object;
+    id object = obj.object;
+    if ([object isKindOfClass:[UIApplication class]]) {
+        model.application = object;
+    } else {
+        model.object = obj.object;
+    }
     model.launchOptions = obj.userInfo;
     model.name = obj.name;
     AJAppEventBlock block = [self.eventDic objectForKey:model.name];
@@ -140,6 +145,15 @@ static AJAppEvent *shared = nil;
 }
 
 #pragma mark - 对外方法
+
++ (void)addObserverName:(NSString *)name block:(AJAppEventBlock)block {
+    [NSNotificationCenter.defaultCenter addObserver:AJAppEvent.shared selector:@selector(p_notificationEvent:) name:name object:nil];
+    [AJAppEvent.shared p_setObserviceEventBlock:block name:name];
+}
+
++ (void)postNotificationName:(NSString *)name object:(id)object userInfo:(NSDictionary *)userInfo {
+    [NSNotificationCenter.defaultCenter postNotificationName:name object:object userInfo:userInfo];
+}
 
 + (void)didEnterBackground:(AJAppEventBlock)block {
     [AJAppEvent.shared p_setObserviceEventBlock:block name:UIApplicationDidEnterBackgroundNotification];
