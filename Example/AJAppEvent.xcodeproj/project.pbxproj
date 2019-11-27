@@ -22,6 +22,7 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		9B820C53238E1ED2006A743B /* AJViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B820C52238E1ED2006A743B /* AJViewController1.m */; };
 		BA54937337958AEA5BA08527 /* Pods_AJAppEvent_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 872A834EB2378218A5003C22 /* Pods_AJAppEvent_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +63,8 @@
 		872A834EB2378218A5003C22 /* Pods_AJAppEvent_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AJAppEvent_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9B137447237BA3F10030C281 /* AJAppEvent-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AJAppEvent-Prefix.pch"; sourceTree = "<group>"; };
+		9B820C51238E1ED2006A743B /* AJViewController1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AJViewController1.h; sourceTree = "<group>"; };
+		9B820C52238E1ED2006A743B /* AJViewController1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AJViewController1.m; sourceTree = "<group>"; };
 		AC72F5796412BE73782AE350 /* Pods-AJAppEvent_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AJAppEvent_Example.debug.xcconfig"; path = "Target Support Files/Pods-AJAppEvent_Example/Pods-AJAppEvent_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -131,6 +134,8 @@
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* AJViewController.h */,
 				6003F5A6195388D20070C39A /* AJViewController.m */,
+				9B820C51238E1ED2006A743B /* AJViewController1.h */,
+				9B820C52238E1ED2006A743B /* AJViewController1.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -338,6 +343,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* AJAppDelegate.m in Sources */,
+				9B820C53238E1ED2006A743B /* AJViewController1.m in Sources */,
 				6003F5A7195388D20070C39A /* AJViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);

@@ -1,5 +1,5 @@
 PODS:
-  - AJAppEvent (0.1.0)
+  - AJAppEvent (1.0.3)
 
 DEPENDENCIES:
   - AJAppEvent (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  AJAppEvent: ff246879f618d9006d473a4ef7b614d850ee3d5b
+  AJAppEvent: 1ca3155caf798a506da9308e71f4f7df6dca00cb
 
 PODFILE CHECKSUM: 7801d56556d346b51522cd1e2347b490d5250e29
 

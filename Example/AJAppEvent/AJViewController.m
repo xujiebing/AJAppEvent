@@ -7,6 +7,7 @@
 //
 
 #import "AJViewController.h"
+#import "AJViewController1.h"
 #import <AJAppEvent/AJAppEvent.h>
 
 @interface AJViewController ()
@@ -19,22 +20,33 @@
 {
     [super viewDidLoad];
     self.view.backgroundColor = UIColor.lightGrayColor;
-    AJWeakSelf
-    [AJAppEvent didFinishLaunching:^(AJAppEventModel * _Nonnull eventModel) {
+    AJAppEventWeakSelf
+    [self ajDidFinishLaunching:^(AJAppEventModel * _Nullable eventModel) {
         NSLog(@"%@", eventModel.name);
         NSLog(@"使用ajSelf，防止内存泄漏=====%@", ajSelf.class);
     }];
-    [AJAppEvent didBecomeActive:^(AJAppEventModel * _Nonnull eventModel) {
+    [self ajDidBecomeActive:^(AJAppEventModel * _Nonnull eventModel) {
         NSLog(@"%@", eventModel.name);
     }];
-    [AJAppEvent didEnterBackground:^(AJAppEventModel * _Nonnull eventModel) {
+    [self ajDidEnterBackground:^(AJAppEventModel * _Nonnull eventModel) {
         NSLog(@"%@", eventModel.name);
     }];
     NSString *name = @"wwwwwwww";
-    [AJAppEvent addObserverName:name block:^(AJAppEventModel * _Nonnull eventModel) {
+    [self ajAddObserverName:name block:^(AJAppEventModel * _Nonnull eventModel) {
         NSLog(@"%@", eventModel.name);
     }];
-    [NSNotificationCenter.defaultCenter postNotificationName:name object:@"111" userInfo:@{@"22":@"22"}];
+    [self ajPostNotificationName:name object:@"111" userInfo:@{@"22":@"22"}];
+    [self ajAddObserverName:name block:^(AJAppEventModel * _Nonnull eventModel) {
+        NSLog(@"%@", eventModel.name);
+    }];
+}
+
+- (IBAction)push:(id)sender {
+    [self.navigationController pushViewController:AJViewController1.new animated:YES];
+}
+
+- (IBAction)notification:(id)sender {
+    [self ajPostNotificationName:@"AJViewController1" object:nil userInfo:nil];
 }
 
 - (void)dealloc {
