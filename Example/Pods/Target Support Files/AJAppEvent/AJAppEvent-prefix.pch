@@ -20,7 +20,6 @@
 #ifndef AJAppEvent_pch
 #define AJAppEvent_pch
 
-#import <AJAppEvent/AJAppEventModel.h>
 #import <AJAppEvent/AJAppEvent.h>
 #import <AJAppEvent/NSObject+AJAppEventRuntime.h>
 

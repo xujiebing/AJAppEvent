@@ -17,7 +17,6 @@ NS_ASSUME_NONNULL_BEGIN
 /// application对象
 @property (nonatomic, strong, readwrite) UIApplication *application;
 
-
 /// 传递对象
 @property (nonatomic, strong, readwrite) UIApplication *object;
 
