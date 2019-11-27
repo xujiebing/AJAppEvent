@@ -11,7 +11,7 @@
 
 #pragma mark - 系统方法
 
-- (void)load {
++ (void)load {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         NSObject.ajAppEventSwizzleMethod(NSSelectorFromString(@"dealloc"), @selector(ajAppEvent_dealloc));

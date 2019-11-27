@@ -8,7 +8,7 @@ pod 'AJAppEvent'
 
 ## 类说明
 
-`AJAppEvent`
+`NSObject+AJAppEvent`
 
 生命周期监听类
 
@@ -16,10 +16,10 @@ pod 'AJAppEvent'
 
 生命周期方法回调对象
 
-## 实例
+## 示例
 
 ```
-[AJAppEvent didFinishLaunching:^(AJAppEventModel * _Nonnull eventModel) {
+[self ajAddObserverName:name block:^(AJAppEventModel * _Nonnull eventModel) {
         NSLog(@"%@", eventModel.name);
     }];
 ```
