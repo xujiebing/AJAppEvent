@@ -21,27 +21,18 @@
     [super viewDidLoad];
     self.view.backgroundColor = UIColor.lightGrayColor;
     AJAppEventWeakSelf
-    [self ajDidFinishLaunching:^(AJAppEventModel * _Nullable eventModel) {
-        NSLog(@"%@", eventModel.name);
-        NSLog(@"使用ajSelf，防止内存泄漏=====%@", ajSelf.class);
-    }];
-    [self ajDidBecomeActive:^(AJAppEventModel * _Nonnull eventModel) {
-        NSLog(@"%@", eventModel.name);
-    }];
-    [self ajDidEnterBackground:^(AJAppEventModel * _Nonnull eventModel) {
-        NSLog(@"%@", eventModel.name);
-    }];
     NSString *name = @"wwwwwwww";
     [self ajAddObserverName:name block:^(AJAppEventModel * _Nonnull eventModel) {
         NSLog(@"%@", eventModel.name);
     }];
-    [self ajPostNotificationName:name object:@"111" userInfo:@{@"22":@"22"}];
     [self ajAddObserverName:name block:^(AJAppEventModel * _Nonnull eventModel) {
         NSLog(@"%@", eventModel.name);
     }];
+    [self ajPostNotificationName:name object:@"111" userInfo:@{@"22":@"22"}];
 }
 
 - (IBAction)push:(id)sender {
+    NSLog(@"");
     [self.navigationController pushViewController:AJViewController1.new animated:YES];
 }
 

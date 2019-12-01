@@ -15,9 +15,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)ajAddObserverName:(NSString * _Nonnull)name block:(AJAppEventBlock)block;
 
+- (void)ajPostNotificationName:(NSString * _Nonnull)name;
+
 - (void)ajPostNotificationName:(NSString * _Nonnull)name
                         object:(id _Nullable)object
                       userInfo:(NSDictionary * _Nullable)userInfo;
+
+- (void)ajRemoveObserverName:(NSString * _Nonnull)name;
 
 - (void)ajDidEnterBackground:(AJAppEventBlock)block;
 

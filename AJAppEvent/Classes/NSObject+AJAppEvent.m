@@ -42,6 +42,7 @@
     }
     [self p_handleEventArray];
     [self p_handleEventDictionaryWithName:name block:block];
+    [self ajRemoveObserverName:name];
     [NSNotificationCenter.defaultCenter addObserver:self selector:@selector(p_notificationEvent:) name:name object:nil];
 }
 
@@ -103,8 +104,19 @@
     [self p_setObserviceEventName:name block:block];
 }
 
+- (void)ajPostNotificationName:(NSString *)name {
+    [NSNotificationCenter.defaultCenter postNotificationName:name object:nil];
+}
+
 - (void)ajPostNotificationName:(NSString *)name object:(id)object userInfo:(NSDictionary *)userInfo {
     [NSNotificationCenter.defaultCenter postNotificationName:name object:object userInfo:userInfo];
+}
+
+- (void)ajRemoveObserverName:(NSString *)name {
+    if (!name) {
+        return;
+    }
+    [NSNotificationCenter.defaultCenter removeObserver:self name:name object:nil];
 }
 
 - (void)ajDidEnterBackground:(AJAppEventBlock)block {
