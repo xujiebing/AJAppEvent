@@ -9,6 +9,13 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@interface NSObject ()
+
+@property (nonatomic, strong, readwrite) NSMutableArray *ajEventArray;
+@property (nonatomic, strong, readwrite) NSMutableDictionary *ajEventDictionary;
+
+@end
+
 @interface NSObject (AJAppEventRuntime)
 
 /// 交换实例方法
@@ -16,14 +23,6 @@ NS_ASSUME_NONNULL_BEGIN
 ///   - origMethod: 原有的方法
 ///   - withMethod: 替换的方法
 + (BOOL (^)(SEL origMethod, SEL withMethod))ajAppEventSwizzleMethod;
-
-- (void)setAjEventArray:(NSMutableArray *)eventArray;
-
-- (NSMutableArray *)ajEventArray;
-
-- (void)setAjEventDictionary:(NSMutableDictionary *)eventDictionary;
-
-- (NSMutableDictionary *)ajEventDictionary;
 
 @end
 
