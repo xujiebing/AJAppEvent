@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'AJAppEvent'
-  s.version          = '1.0.5'
+  s.version          = '1.1.0'
   s.summary          = 'A short description of AJAppEvent.'
   s.description      = <<-DESC
 TODO: Add long description of the pod here.
