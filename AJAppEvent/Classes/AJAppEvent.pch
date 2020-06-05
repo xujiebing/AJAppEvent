@@ -9,7 +9,6 @@
 #define AJAppEvent_pch
 
 #import <AJAppEvent/AJAppEvent.h>
-#import <AJAppEvent/NSObject+AJAppEventRuntime.h>
 
 #import <objc/runtime.h>
 

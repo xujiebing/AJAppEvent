@@ -20,8 +20,8 @@ NS_ASSUME_NONNULL_BEGIN
 /// 传递对象
 @property (nonatomic, strong, readwrite) UIApplication *object;
 
-/// 参数
-@property (nonatomic, strong, readwrite) NSDictionary *launchOptions;
+/// 参数  launchOptions / userInfo
+@property (nonatomic, strong, readwrite) NSDictionary *userInfo;
 
 @end
 

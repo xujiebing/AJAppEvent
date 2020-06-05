@@ -7,46 +7,37 @@
 
 #import "NSObject+AJAppEvent.h"
 
+static NSString * const ajDictionaryKey = @"ajEventDictionary";
+
+@interface NSObject ()
+
+@property (nonatomic, strong, readwrite) NSMutableDictionary *ajEventDictionary;
+
+@end
+
 @implementation NSObject (AJAppEvent)
 
 #pragma mark - 系统方法
 
-+ (void)load {
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        NSObject.ajAppEventSwizzleMethod(NSSelectorFromString(@"dealloc"), @selector(ajAppEvent_dealloc));
-    });
+- (void)setAjEventDictionary:(NSMutableDictionary *)eventDictionary {
+    objc_setAssociatedObject(self, (__bridge const void * _Nonnull)(ajDictionaryKey), eventDictionary, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
-- (void)ajAppEvent_dealloc {
-    NSMutableArray *array = self.ajEventArray;
-    if (!array) {
-        [self ajAppEvent_dealloc];
-        return;
-    }
-    NSString *className = NSStringFromClass([self class]);
-    if (![array containsObject:className]) {
-        [self ajAppEvent_dealloc];
-        return;
-    }
-    [NSNotificationCenter.defaultCenter removeObserver:self];
-    [array removeObject:className];
-    [self ajAppEvent_dealloc];
+- (NSMutableDictionary *)ajEventDictionary {
+    return objc_getAssociatedObject(self, (__bridge const void * _Nonnull)(ajDictionaryKey));
 }
 
 #pragma mark - 内部方法
 
-- (void)p_setObserviceEventName:(NSNotificationName)name block:(AJAppEventBlock)block {
+- (void)p_ajSetObserviceEventName:(NSNotificationName)name block:(AJAppEventBlock)block {
     if (!block || !name) {
         return;
     }
-    [self p_handleEventArray];
-    [self p_handleEventDictionaryWithName:name block:block];
-    [self ajRemoveObserverName:name];
-    [NSNotificationCenter.defaultCenter addObserver:self selector:@selector(p_notificationEvent:) name:name object:nil];
+    [self p_ajHandleEventDictionaryWithName:name block:block];
+    [NSNotificationCenter.defaultCenter addObserver:self selector:@selector(p_ajNotificationEvent:) name:name object:nil];
 }
 
-- (void)p_notificationEvent:(NSNotification *)obj {
+- (void)p_ajNotificationEvent:(NSNotification *)obj {
     if (!obj) {
         return ;
     }
@@ -57,32 +48,19 @@
     } else {
         model.object = obj.object;
     }
-    model.launchOptions = obj.userInfo;
+    model.userInfo = obj.userInfo;
     model.name = obj.name;
     NSDictionary *dic = self.ajEventDictionary;
     if (!dic) {
         return;
     }
-    AJAppEventBlock block = [dic objectForKey:model.name];
-    if (!block) {
-        return;
-    }
-    block(model);
+    NSArray *blockArray = [dic objectForKey:model.name];
+    [blockArray enumerateObjectsUsingBlock:^(AJAppEventBlock block, NSUInteger idx, BOOL * _Nonnull stop) {
+        block(model);
+    }];
 }
 
-- (void)p_handleEventArray {
-    NSMutableArray *array = self.ajEventArray;
-    if (!array) {
-        array = [[NSMutableArray alloc] initWithCapacity:0];
-    }
-    NSString *className = NSStringFromClass([self class]);
-    if (![array containsObject:className]) {
-        [array addObject:className];
-    }
-    [self setAjEventArray:array];
-}
-
-- (void)p_handleEventDictionaryWithName:(NSString *)name block:(AJAppEventBlock)block {
+- (void)p_ajHandleEventDictionaryWithName:(NSString *)name block:(AJAppEventBlock)block {
     if (!block || !name) {
         return;
     }
@@ -92,31 +70,53 @@
     }
     NSArray *keyArray = [dic allKeys];
     if ([keyArray containsObject:name]) {
+        NSMutableArray *blockArray = [dic objectForKey:name];
+        [blockArray addObject:block];
+        [dic setObject:blockArray forKey:name];
+    }
+    NSMutableArray *blockArray = [NSMutableArray arrayWithArray:@[block]];
+    [dic setObject:blockArray forKey:name];
+    [self setAjEventDictionary:dic];
+}
+
+- (void)p_ajRemoveObserverName:(NSString *)name {
+    if (!name) {
+        [NSNotificationCenter.defaultCenter removeObserver:self];
+        [self setAjEventDictionary:nil];
+        return;
+    }
+    [NSNotificationCenter.defaultCenter removeObserver:self name:name object:nil];
+    NSMutableDictionary *dic = self.ajEventDictionary;
+    if (!dic) {
+        return;
+    }
+    NSArray *keyArray = [dic allKeys];
+    if ([keyArray containsObject:name]) {
         [dic removeObjectForKey:name];
     }
-    [dic setObject:block forKey:name];
     [self setAjEventDictionary:dic];
 }
 
 #pragma mark - 对外方法
 
 - (void)ajAddObserverName:(NSString *)name block:(AJAppEventBlock)block {
-    [self p_setObserviceEventName:name block:block];
+    [self p_ajSetObserviceEventName:name block:block];
 }
 
 - (void)ajPostNotificationName:(NSString *)name {
     [NSNotificationCenter.defaultCenter postNotificationName:name object:nil];
 }
 
-- (void)ajPostNotificationName:(NSString *)name object:(id)object userInfo:(NSDictionary *)userInfo {
-    [NSNotificationCenter.defaultCenter postNotificationName:name object:object userInfo:userInfo];
+- (void)ajPostNotificationName:(NSString *)name userInfo:(NSDictionary *)userInfo {
+    [NSNotificationCenter.defaultCenter postNotificationName:name object:nil userInfo:userInfo];
+}
+
+- (void)ajRemoveObserver {
+    [self p_ajRemoveObserverName:nil];
 }
 
 - (void)ajRemoveObserverName:(NSString *)name {
-    if (!name) {
-        return;
-    }
-    [NSNotificationCenter.defaultCenter removeObserver:self name:name object:nil];
+    [self p_ajRemoveObserverName:name];
 }
 
 - (void)ajDidEnterBackground:(AJAppEventBlock)block {

@@ -8,19 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		00E812FDFC245B7531727A01282BF5F5 /* Pods-AJAppEvent_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F960031054D402B877C67EAC57D7531C /* Pods-AJAppEvent_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0E4BBB14AC4E66CF593D8915D15C60F1 /* NSObject+AJAppEventRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = AAB13717D0C2399064689FA6BA92A7A3 /* NSObject+AJAppEventRuntime.m */; };
-		1417F2080BF6191FD914FC6C87CE02B9 /* AJAppEvent-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B937FE92C953ABBF330A2D6449C291D6 /* AJAppEvent-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		31DDD132CA922B1DF432456241DEB66A /* AJAppEventModel.h in Headers */ = {isa = PBXBuildFile; fileRef = EF1BDDB9D08C845D3710B77F587F392F /* AJAppEventModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0BDE6A1C0FFB1916B4D268D39A270D42 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		3E985542EAFE3A29AE805DC4AE44C19B /* Pods-AJAppEvent_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E7BA295F1856ADE96D00BB9A3C5AF1 /* Pods-AJAppEvent_Example-dummy.m */; };
 		46131DCE8755338FF74C6315C38B0AF6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		A5423D7E0883FCE76304775E8D87A782 /* AJAppEvent.pch in Sources */ = {isa = PBXBuildFile; fileRef = 67A64E64402553FE410A10D74AC90321 /* AJAppEvent.pch */; };
-		A892786E63A5CB345BD7CE1E0DF4414D /* NSObject+AJAppEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE0B0E9839B540DA53ECEC1680A8B28 /* NSObject+AJAppEvent.m */; };
-		B8DD1F9470FF5A8A1E543BF49CB49E6F /* AJAppEvent-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A9ABBCF0C98237B97C51A25AC608326 /* AJAppEvent-dummy.m */; };
-		BCFB3782D6041C9EC81EE97B465DF643 /* AJAppEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D7392DBCC06EB088E2BE269F9765A35 /* AJAppEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C054AC5413ADC7664076FE15470C271E /* NSObject+AJAppEventRuntime.h in Headers */ = {isa = PBXBuildFile; fileRef = 37854D01EE7FA4127C99B4703509CDC4 /* NSObject+AJAppEventRuntime.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D112CEB40C6C42251F39B45E4DB6C28B /* AJAppEventModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC7931FC1FCBF77169C98F93C7FA7A6 /* AJAppEventModel.m */; };
-		D5116D0B50F7F6C3D48660E77051C337 /* NSObject+AJAppEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = B145565D032D920C99D86D3E1389A626 /* NSObject+AJAppEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E8A5454AEC578CF74B805CE129415B40 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		5AB65A4C7D7993FBA5C4B5C77CF19A28 /* AJAppEvent.pch in Sources */ = {isa = PBXBuildFile; fileRef = 2C63EF4C89309B64B70D4B6F5DC8E647 /* AJAppEvent.pch */; };
+		92D589971ADBDD4415B2FFCDB7A4AA8B /* AJAppEvent-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D1197F895F5471DC500ABF559610F21 /* AJAppEvent-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A23DC316D0CEF0C5734C8736105C6366 /* AJAppEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E7E193154F838F1DCEA26B4D78E1C20 /* AJAppEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C5822744EDB2151762E8D1B38A8824C8 /* AJAppEventModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A77172E4962C74A4A3D9CA9F41DECF0 /* AJAppEventModel.m */; };
+		C957B8ACAE695E6DF161C9DA320EF4F1 /* NSObject+AJAppEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 952E820A8BE87DA4B5C09BA5A506E152 /* NSObject+AJAppEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C9EEB99154D5A329740161C86C7C563D /* AJAppEvent-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4350DEAA61996ABC7EECEE2559FC9C52 /* AJAppEvent-dummy.m */; };
+		FB1B53F88ACFD69C0FE9A57A067B9B85 /* AJAppEventModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 73099B149CFCB22699D6C710E344A178 /* AJAppEventModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FD6AC0249946B6749788BFE3F925F43F /* NSObject+AJAppEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 53711C9355918020A6AC3535F2985A6C /* NSObject+AJAppEvent.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,47 +32,37 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		16759B811034CCE689FD418A919052E5 /* AJAppEvent.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AJAppEvent.modulemap; sourceTree = "<group>"; };
-		1D7392DBCC06EB088E2BE269F9765A35 /* AJAppEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AJAppEvent.h; path = AJAppEvent/Classes/AJAppEvent.h; sourceTree = "<group>"; };
+		1D1197F895F5471DC500ABF559610F21 /* AJAppEvent-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AJAppEvent-umbrella.h"; sourceTree = "<group>"; };
 		1E62CEF16BE924A20D2AEC7F64527271 /* Pods-AJAppEvent_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AJAppEvent_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		233D342D15543CAF50C0B7E5F44F73F0 /* AJAppEvent.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AJAppEvent.xcconfig; sourceTree = "<group>"; };
+		2C63EF4C89309B64B70D4B6F5DC8E647 /* AJAppEvent.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AJAppEvent.pch; path = AJAppEvent/Classes/AJAppEvent.pch; sourceTree = "<group>"; };
 		300CBC1A8A47559F13C77BA4AC5CDC21 /* Pods-AJAppEvent_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AJAppEvent_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		37854D01EE7FA4127C99B4703509CDC4 /* NSObject+AJAppEventRuntime.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+AJAppEventRuntime.h"; path = "AJAppEvent/Classes/NSObject+AJAppEventRuntime.h"; sourceTree = "<group>"; };
-		38712BFA434C21FC5F965CF0E2B4E814 /* AJAppEvent-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AJAppEvent-prefix.pch"; sourceTree = "<group>"; };
+		3A77172E4962C74A4A3D9CA9F41DECF0 /* AJAppEventModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AJAppEventModel.m; path = AJAppEvent/Classes/AJAppEventModel.m; sourceTree = "<group>"; };
+		4350DEAA61996ABC7EECEE2559FC9C52 /* AJAppEvent-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AJAppEvent-dummy.m"; sourceTree = "<group>"; };
 		4CB096F0BC4FEE2460AC87FBB6B9B246 /* Pods_AJAppEvent_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AJAppEvent_Example.framework; path = "Pods-AJAppEvent_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		50327EF2B50658D9A78DCBACFA4F3DF3 /* AJAppEvent-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AJAppEvent-Info.plist"; sourceTree = "<group>"; };
 		52D27BD0653E3B09B5778D62066EE112 /* Pods-AJAppEvent_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AJAppEvent_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		67A64E64402553FE410A10D74AC90321 /* AJAppEvent.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AJAppEvent.pch; path = AJAppEvent/Classes/AJAppEvent.pch; sourceTree = "<group>"; };
+		53711C9355918020A6AC3535F2985A6C /* NSObject+AJAppEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+AJAppEvent.m"; path = "AJAppEvent/Classes/NSObject+AJAppEvent.m"; sourceTree = "<group>"; };
 		6ADF07992F517A57B9D76612C120D1D5 /* Pods-AJAppEvent_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AJAppEvent_Example-Info.plist"; sourceTree = "<group>"; };
+		73099B149CFCB22699D6C710E344A178 /* AJAppEventModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AJAppEventModel.h; path = AJAppEvent/Classes/AJAppEventModel.h; sourceTree = "<group>"; };
 		8A21FFAA57797884225990B8F531F95B /* Pods-AJAppEvent_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AJAppEvent_Example-frameworks.sh"; sourceTree = "<group>"; };
-		8A9ABBCF0C98237B97C51A25AC608326 /* AJAppEvent-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AJAppEvent-dummy.m"; sourceTree = "<group>"; };
-		90B7AFFAB2572924E4D2E054B95CDF09 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		8CDDE802C9E89CFDDDD990EC74FB3721 /* AJAppEvent.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AJAppEvent.modulemap; sourceTree = "<group>"; };
+		8E7E193154F838F1DCEA26B4D78E1C20 /* AJAppEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AJAppEvent.h; path = AJAppEvent/Classes/AJAppEvent.h; sourceTree = "<group>"; };
+		952E820A8BE87DA4B5C09BA5A506E152 /* NSObject+AJAppEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+AJAppEvent.h"; path = "AJAppEvent/Classes/NSObject+AJAppEvent.h"; sourceTree = "<group>"; };
+		9D09683B50C9267DF2AB28B3A20D98AC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9EC7931FC1FCBF77169C98F93C7FA7A6 /* AJAppEventModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AJAppEventModel.m; path = AJAppEvent/Classes/AJAppEventModel.m; sourceTree = "<group>"; };
+		9ED28DEDBCBFE5182FB5DEF34DEFB254 /* AJAppEvent-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AJAppEvent-Info.plist"; sourceTree = "<group>"; };
 		9FF5EE627324AFE91D2929E9FBECB0D2 /* AJAppEvent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AJAppEvent.framework; path = AJAppEvent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A1DE648FCC149D1ACF7585D04327D555 /* AJAppEvent.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AJAppEvent.xcconfig; sourceTree = "<group>"; };
-		AAB13717D0C2399064689FA6BA92A7A3 /* NSObject+AJAppEventRuntime.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+AJAppEventRuntime.m"; path = "AJAppEvent/Classes/NSObject+AJAppEventRuntime.m"; sourceTree = "<group>"; };
-		B145565D032D920C99D86D3E1389A626 /* NSObject+AJAppEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+AJAppEvent.h"; path = "AJAppEvent/Classes/NSObject+AJAppEvent.h"; sourceTree = "<group>"; };
 		B1E7BA295F1856ADE96D00BB9A3C5AF1 /* Pods-AJAppEvent_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AJAppEvent_Example-dummy.m"; sourceTree = "<group>"; };
 		B6434B4A6970CF092FE6721CD1A1FD66 /* Pods-AJAppEvent_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AJAppEvent_Example.modulemap"; sourceTree = "<group>"; };
-		B937FE92C953ABBF330A2D6449C291D6 /* AJAppEvent-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AJAppEvent-umbrella.h"; sourceTree = "<group>"; };
-		BCE0B0E9839B540DA53ECEC1680A8B28 /* NSObject+AJAppEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+AJAppEvent.m"; path = "AJAppEvent/Classes/NSObject+AJAppEvent.m"; sourceTree = "<group>"; };
-		D05B3AC6F084EF2DAD7937312B469B10 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		CE283B915E7EAC0ED932500AE313919B /* AJAppEvent.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = AJAppEvent.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		DC76BC0E69BF8315C53B2359ED7F77DA /* AJAppEvent-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AJAppEvent-prefix.pch"; sourceTree = "<group>"; };
 		DDBF5E6C68BFE5F92F4DB45DB15E8408 /* Pods-AJAppEvent_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AJAppEvent_Example.release.xcconfig"; sourceTree = "<group>"; };
-		EF1BDDB9D08C845D3710B77F587F392F /* AJAppEventModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AJAppEventModel.h; path = AJAppEvent/Classes/AJAppEventModel.h; sourceTree = "<group>"; };
+		E413932425AE14EADA801C73095C94F7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		F960031054D402B877C67EAC57D7531C /* Pods-AJAppEvent_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AJAppEvent_Example-umbrella.h"; sourceTree = "<group>"; };
-		FD9DCA4A44E1C143A9E8FA1B7CD94E39 /* AJAppEvent.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = AJAppEvent.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		489BE6F605B07AFD23096696158A7482 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E8A5454AEC578CF74B805CE129415B40 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		630CAE3AEA755A478E0D7CF8AF3711D0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -83,15 +71,41 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A4BE2429A7911DC24B7B84E54E2A22D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BDE6A1C0FFB1916B4D268D39A270D42 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		02ACA5C1C4FA023CC643C9B7EE06D59F /* Development Pods */ = {
+		00BEBE2166CB61CC153B0671009F1E54 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				3DE62087D4EF0E7A1BE978D6B74F10C0 /* AJAppEvent */,
+				CE283B915E7EAC0ED932500AE313919B /* AJAppEvent.podspec */,
+				E413932425AE14EADA801C73095C94F7 /* LICENSE */,
+				9D09683B50C9267DF2AB28B3A20D98AC /* README.md */,
 			);
-			name = "Development Pods";
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		0F2C190C315D2B066B47053BE3EA81C5 /* AJAppEvent */ = {
+			isa = PBXGroup;
+			children = (
+				8E7E193154F838F1DCEA26B4D78E1C20 /* AJAppEvent.h */,
+				2C63EF4C89309B64B70D4B6F5DC8E647 /* AJAppEvent.pch */,
+				73099B149CFCB22699D6C710E344A178 /* AJAppEventModel.h */,
+				3A77172E4962C74A4A3D9CA9F41DECF0 /* AJAppEventModel.m */,
+				952E820A8BE87DA4B5C09BA5A506E152 /* NSObject+AJAppEvent.h */,
+				53711C9355918020A6AC3535F2985A6C /* NSObject+AJAppEvent.m */,
+				00BEBE2166CB61CC153B0671009F1E54 /* Pod */,
+				A9E75442EFEC67D7A7BEC6FBB5337FD9 /* Support Files */,
+			);
+			name = AJAppEvent;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		1315E03BB36D58982D4753EEFAC013D6 /* Targets Support Files */ = {
@@ -119,32 +133,18 @@
 			path = "Target Support Files/Pods-AJAppEvent_Example";
 			sourceTree = "<group>";
 		};
-		3DE62087D4EF0E7A1BE978D6B74F10C0 /* AJAppEvent */ = {
+		A9E75442EFEC67D7A7BEC6FBB5337FD9 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				1D7392DBCC06EB088E2BE269F9765A35 /* AJAppEvent.h */,
-				67A64E64402553FE410A10D74AC90321 /* AJAppEvent.pch */,
-				EF1BDDB9D08C845D3710B77F587F392F /* AJAppEventModel.h */,
-				9EC7931FC1FCBF77169C98F93C7FA7A6 /* AJAppEventModel.m */,
-				B145565D032D920C99D86D3E1389A626 /* NSObject+AJAppEvent.h */,
-				BCE0B0E9839B540DA53ECEC1680A8B28 /* NSObject+AJAppEvent.m */,
-				37854D01EE7FA4127C99B4703509CDC4 /* NSObject+AJAppEventRuntime.h */,
-				AAB13717D0C2399064689FA6BA92A7A3 /* NSObject+AJAppEventRuntime.m */,
-				41435292E8A523794CFA19DD74BCABBC /* Pod */,
-				C8C55A4947CA29A179A233F33FE35539 /* Support Files */,
+				8CDDE802C9E89CFDDDD990EC74FB3721 /* AJAppEvent.modulemap */,
+				233D342D15543CAF50C0B7E5F44F73F0 /* AJAppEvent.xcconfig */,
+				4350DEAA61996ABC7EECEE2559FC9C52 /* AJAppEvent-dummy.m */,
+				9ED28DEDBCBFE5182FB5DEF34DEFB254 /* AJAppEvent-Info.plist */,
+				DC76BC0E69BF8315C53B2359ED7F77DA /* AJAppEvent-prefix.pch */,
+				1D1197F895F5471DC500ABF559610F21 /* AJAppEvent-umbrella.h */,
 			);
-			name = AJAppEvent;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		41435292E8A523794CFA19DD74BCABBC /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				FD9DCA4A44E1C143A9E8FA1B7CD94E39 /* AJAppEvent.podspec */,
-				90B7AFFAB2572924E4D2E054B95CDF09 /* LICENSE */,
-				D05B3AC6F084EF2DAD7937312B469B10 /* README.md */,
-			);
-			name = Pod;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/AJAppEvent";
 			sourceTree = "<group>";
 		};
 		B6FDEEC66F72D848F9E0A006D1B2D49C /* Products */ = {
@@ -164,25 +164,19 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		C8C55A4947CA29A179A233F33FE35539 /* Support Files */ = {
+		CD904BB329E478456456928509E86FC1 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				16759B811034CCE689FD418A919052E5 /* AJAppEvent.modulemap */,
-				A1DE648FCC149D1ACF7585D04327D555 /* AJAppEvent.xcconfig */,
-				8A9ABBCF0C98237B97C51A25AC608326 /* AJAppEvent-dummy.m */,
-				50327EF2B50658D9A78DCBACFA4F3DF3 /* AJAppEvent-Info.plist */,
-				38712BFA434C21FC5F965CF0E2B4E814 /* AJAppEvent-prefix.pch */,
-				B937FE92C953ABBF330A2D6449C291D6 /* AJAppEvent-umbrella.h */,
+				0F2C190C315D2B066B47053BE3EA81C5 /* AJAppEvent */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/AJAppEvent";
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				02ACA5C1C4FA023CC643C9B7EE06D59F /* Development Pods */,
+				CD904BB329E478456456928509E86FC1 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				B6FDEEC66F72D848F9E0A006D1B2D49C /* Products */,
 				1315E03BB36D58982D4753EEFAC013D6 /* Targets Support Files */,
@@ -200,15 +194,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		0D7331CC62BF63E82FFD28A57489A293 /* Headers */ = {
+		DBAE0B9AC27804199F45EB48B92AC137 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1417F2080BF6191FD914FC6C87CE02B9 /* AJAppEvent-umbrella.h in Headers */,
-				BCFB3782D6041C9EC81EE97B465DF643 /* AJAppEvent.h in Headers */,
-				31DDD132CA922B1DF432456241DEB66A /* AJAppEventModel.h in Headers */,
-				D5116D0B50F7F6C3D48660E77051C337 /* NSObject+AJAppEvent.h in Headers */,
-				C054AC5413ADC7664076FE15470C271E /* NSObject+AJAppEventRuntime.h in Headers */,
+				92D589971ADBDD4415B2FFCDB7A4AA8B /* AJAppEvent-umbrella.h in Headers */,
+				A23DC316D0CEF0C5734C8736105C6366 /* AJAppEvent.h in Headers */,
+				FB1B53F88ACFD69C0FE9A57A067B9B85 /* AJAppEventModel.h in Headers */,
+				C957B8ACAE695E6DF161C9DA320EF4F1 /* NSObject+AJAppEvent.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,12 +218,12 @@
 /* Begin PBXNativeTarget section */
 		52CAA49FC559381F628C59A642C8831B /* AJAppEvent */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 73B3F9C11917AD62AA7799383D0A8A55 /* Build configuration list for PBXNativeTarget "AJAppEvent" */;
+			buildConfigurationList = E8F20E585F90256200527A3C3A7450AF /* Build configuration list for PBXNativeTarget "AJAppEvent" */;
 			buildPhases = (
-				0D7331CC62BF63E82FFD28A57489A293 /* Headers */,
-				709B2574503A0B4FAED061C7B31CF160 /* Sources */,
-				489BE6F605B07AFD23096696158A7482 /* Frameworks */,
-				8CA21A61A4257DA3F4A54872F46A155A /* Resources */,
+				DBAE0B9AC27804199F45EB48B92AC137 /* Headers */,
+				2B7ED1B159F4DA1105C9E5366CAFB4FB /* Sources */,
+				A4BE2429A7911DC24B7B84E54E2A22D7 /* Frameworks */,
+				D54F95DB6406F215BE8D679F266649D8 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -275,6 +268,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
 			productRefGroup = B6FDEEC66F72D848F9E0A006D1B2D49C /* Products */;
@@ -295,7 +289,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8CA21A61A4257DA3F4A54872F46A155A /* Resources */ = {
+		D54F95DB6406F215BE8D679F266649D8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -313,15 +307,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		709B2574503A0B4FAED061C7B31CF160 /* Sources */ = {
+		2B7ED1B159F4DA1105C9E5366CAFB4FB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B8DD1F9470FF5A8A1E543BF49CB49E6F /* AJAppEvent-dummy.m in Sources */,
-				A5423D7E0883FCE76304775E8D87A782 /* AJAppEvent.pch in Sources */,
-				D112CEB40C6C42251F39B45E4DB6C28B /* AJAppEventModel.m in Sources */,
-				A892786E63A5CB345BD7CE1E0DF4414D /* NSObject+AJAppEvent.m in Sources */,
-				0E4BBB14AC4E66CF593D8915D15C60F1 /* NSObject+AJAppEventRuntime.m in Sources */,
+				C9EEB99154D5A329740161C86C7C563D /* AJAppEvent-dummy.m in Sources */,
+				5AB65A4C7D7993FBA5C4B5C77CF19A28 /* AJAppEvent.pch in Sources */,
+				C5822744EDB2151762E8D1B38A8824C8 /* AJAppEventModel.m in Sources */,
+				FD6AC0249946B6749788BFE3F925F43F /* NSObject+AJAppEvent.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,9 +364,9 @@
 			};
 			name = Release;
 		};
-		199953789E4FCE9280B441FC5F16532C /* Debug */ = {
+		0D1DDA9E93268C553137A4EC179A363D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A1DE648FCC149D1ACF7585D04327D555 /* AJAppEvent.xcconfig */;
+			baseConfigurationReference = 233D342D15543CAF50C0B7E5F44F73F0 /* AJAppEvent.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -387,7 +380,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/AJAppEvent/AJAppEvent-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/AJAppEvent/AJAppEvent-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/AJAppEvent/AJAppEvent.modulemap";
 				PRODUCT_MODULE_NAME = AJAppEvent;
@@ -397,10 +390,11 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		4BE66A09A74FD25164AAB3C2645B9B93 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -459,38 +453,6 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		71E8F9E2143C8EA787DDA4CE7A41C37C /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A1DE648FCC149D1ACF7585D04327D555 /* AJAppEvent.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/AJAppEvent/AJAppEvent-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AJAppEvent/AJAppEvent-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/AJAppEvent/AJAppEvent.modulemap";
-				PRODUCT_MODULE_NAME = AJAppEvent;
-				PRODUCT_NAME = AJAppEvent;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -558,6 +520,37 @@
 			};
 			name = Debug;
 		};
+		C6C8667B43625F851BAE13CBD496DB13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 233D342D15543CAF50C0B7E5F44F73F0 /* AJAppEvent.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AJAppEvent/AJAppEvent-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AJAppEvent/AJAppEvent-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AJAppEvent/AJAppEvent.modulemap";
+				PRODUCT_MODULE_NAME = AJAppEvent;
+				PRODUCT_NAME = AJAppEvent;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		E57CBD4240AC4FCBB985BF09BB962563 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 300CBC1A8A47559F13C77BA4AC5CDC21 /* Pods-AJAppEvent_Example.debug.xcconfig */;
@@ -603,20 +596,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		73B3F9C11917AD62AA7799383D0A8A55 /* Build configuration list for PBXNativeTarget "AJAppEvent" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				199953789E4FCE9280B441FC5F16532C /* Debug */,
-				71E8F9E2143C8EA787DDA4CE7A41C37C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		83C83D98FC47E5E0B59959C35CAD0687 /* Build configuration list for PBXNativeTarget "Pods-AJAppEvent_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E57CBD4240AC4FCBB985BF09BB962563 /* Debug */,
 				0953F88A45DE90AE85BE5D791467C0E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8F20E585F90256200527A3C3A7450AF /* Build configuration list for PBXNativeTarget "AJAppEvent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6C8667B43625F851BAE13CBD496DB13 /* Debug */,
+				0D1DDA9E93268C553137A4EC179A363D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

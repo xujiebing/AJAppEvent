@@ -21,6 +21,7 @@
     [self ajAddObserverName:@"AJViewController1" block:^(AJAppEventModel * _Nonnull eventModel) {
         NSLog(@"2222222==%@", eventModel.name);
     }];
+    [self ajPostNotificationName:@"AJViewController1"];
 }
 
 - (void)dealloc {

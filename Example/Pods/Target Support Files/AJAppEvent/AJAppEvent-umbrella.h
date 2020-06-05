@@ -13,7 +13,6 @@
 #import "AJAppEvent.h"
 #import "AJAppEventModel.h"
 #import "NSObject+AJAppEvent.h"
-#import "NSObject+AJAppEventRuntime.h"
 
 FOUNDATION_EXPORT double AJAppEventVersionNumber;
 FOUNDATION_EXPORT const unsigned char AJAppEventVersionString[];

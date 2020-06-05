@@ -478,6 +478,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AJAppEvent/AJAppEvent-Prefix.pch";
 				INFOPLIST_FILE = "AJAppEvent/AJAppEvent-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MODULE_NAME = ExampleApp;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -486,7 +487,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.bwton.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = bwt_dev;
+				PROVISIONING_PROFILE_SPECIFIER = msx_dev;
 				SWIFT_VERSION = 4.0;
 				WRAPPER_EXTENSION = app;
 			};
@@ -502,6 +503,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AJAppEvent/AJAppEvent-Prefix.pch";
 				INFOPLIST_FILE = "AJAppEvent/AJAppEvent-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MODULE_NAME = ExampleApp;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -510,7 +512,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.bwton.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = bwt_dev;
+				PROVISIONING_PROFILE_SPECIFIER = msx_dev;
 				SWIFT_VERSION = 4.0;
 				WRAPPER_EXTENSION = app;
 			};

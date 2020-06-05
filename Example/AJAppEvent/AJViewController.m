@@ -10,6 +10,8 @@
 #import "AJViewController1.h"
 #import <AJAppEvent/AJAppEvent.h>
 
+static NSString *kObserverName = @"wwwwwwww";
+
 @interface AJViewController ()
 
 @end
@@ -21,14 +23,15 @@
     [super viewDidLoad];
     self.view.backgroundColor = UIColor.lightGrayColor;
     AJAppEventWeakSelf
-    NSString *name = @"wwwwwwww";
-    [self ajAddObserverName:name block:^(AJAppEventModel * _Nonnull eventModel) {
+    [self ajAddObserverName:kObserverName block:^(AJAppEventModel * _Nonnull eventModel) {
         NSLog(@"%@", eventModel.name);
     }];
-    [self ajAddObserverName:name block:^(AJAppEventModel * _Nonnull eventModel) {
+    [self ajRemoveObserverName:kObserverName];
+    [self ajPostNotificationName:kObserverName userInfo:@{@"22":@"22"}];
+    [self ajAddObserverName:kObserverName block:^(AJAppEventModel * _Nonnull eventModel) {
         NSLog(@"%@", eventModel.name);
     }];
-    [self ajPostNotificationName:name object:@"111" userInfo:@{@"22":@"22"}];
+    
 }
 
 - (IBAction)push:(id)sender {
@@ -37,7 +40,7 @@
 }
 
 - (IBAction)notification:(id)sender {
-    [self ajPostNotificationName:@"AJViewController1" object:nil userInfo:nil];
+    [self ajPostNotificationName:kObserverName userInfo:nil];
 }
 
 - (void)dealloc {
